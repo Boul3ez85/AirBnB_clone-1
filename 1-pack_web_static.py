@@ -1,4 +1,4 @@
-#!/ysr/bin/python3
+#!/usr/bin/python3
 """a script to generate a .tgz files from the contents of the
 web_static folder of the AirBnB repo"""
 
