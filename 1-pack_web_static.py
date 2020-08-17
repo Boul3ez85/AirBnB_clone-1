@@ -1,6 +1,6 @@
 #!/ysr/bin/python3
-# a script to generate a .tgz files from the contents of the
-# web_static folder of the AirBnB repo
+"""a script to generate a .tgz files from the contents of the
+web_static folder of the AirBnB repo"""
 
 import os.path
 from fabric.api import local
