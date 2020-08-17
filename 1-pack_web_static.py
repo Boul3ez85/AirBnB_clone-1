@@ -9,7 +9,7 @@ from datetime import datetime
 
 def do_pack():
     """Represent a function to generate .tgz files"""
-    
+
     if not os.path.exists("versions/"):
         os.mkdir("versions")
 
