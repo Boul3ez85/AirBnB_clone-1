@@ -50,10 +50,17 @@ def C_isfun(text):
     return "C %s" % text.replace('_', ' ')
 
 
-@app.route("/python/(<text>)", defaults={"value": "is cool"}, strict_slashes=False)
-@app.route("/python/(<text>)/<value>")
-def python_iscool(value):
-    return "Python %s" % text.repalce('_', ' ')
+@app.route("/python", strict_slashes=False)
+@app.route("/python/<text>", strict_slashes=False)
+def python_iscool(text='is cool'):
+    """
+    Dispalys 'Python'
+        Arguments:
+            text: variable name
+        Returns:
+            (str)
+    """
+    return "Python %s" % text.replace('_', ' ')
 
 
 if __name__ == '__main__':
